@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://blogaapp-api.onrender.com",
   "engines": {
     "node": "18.x"
   },

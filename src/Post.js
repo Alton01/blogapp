@@ -7,7 +7,7 @@ export default function Post ({_id,title,summary,cover,content,createdAt,author}
         <div className="post">
        
               <div className="image">
-                <img src={'http://localhost:4000/'+cover} />
+                <img src={'https://blogaapp-api.onrender.com/'+cover} />
               </div>
               <div className="texts">
                 <h2>{title}</h2>

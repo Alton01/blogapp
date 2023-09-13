@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  color: #222;
+  margin: 0;
+  padding: 0;
+  font-family: "Castoro", serif;
+}
+
+img {
+  max-width: 100%;
+  height: 150px;
+  margin: 0;
+}
+
+main {
+  padding: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+div.post {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #7c7979;
+}
+/* -------------------BEGINNING OF MEDIA QUERY FOR HOME PAGE ------------------------------*/
+@media screen and (max-width: 550px) {
+  div.post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  div.image {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 0;
+  }
+
+  div.texts {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    height: 150px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  div.post div.texts h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  div.post div.texts h2 {
+    font-size: 18px;
+  }
+
+  header a.logo {
+    font-weight: bold;
+    font-size: 20px;
+    margin: -30px;
+  }
+}
+
+/* -------------------END OF MEDIA QUERY FOR HOME PAGE ------------------------------*/
+div.post div.texts h2 {
+  font-size: 24px;
+  font-family: "Castoro", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  font-weight: 700;
+  color: #031696;
+}
+
+div.image {
+  width: 40%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+div.texts {
+  width: 56%;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 2%;
+}
+
+div.post p.info {
+  margin: 6px 0;
+  color: #888;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+div.post p.info a.author {
+  color: #333;
+}
+
+div.post p.summary {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+/* LOGIN AND REGISTER..................................*/
+
+form.login,
+form.register {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+  padding: 15px 7px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button {
+  width: 150px;
+  display: block;
+  padding: 10px 7px;
+  background-color: #2d0fda;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form.login h1,
+form.register h1 {
+  text-align: center;
+}
+
+/* ----------------------------POST PAGE */
+
+div.post-page {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+div.post-page div.image {
+  max-height: 400px;
+  width: 100%;
+}
+
+div.post-page div.image img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+div.post-page a {
+  text-decoration: underline;
+}
+
+div.post-page h1 {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+div.post-page time {
+  text-align: center;
+  display: block;
+  font-size: 12px;
+}
+
+div.post-page div.author {
+  text-align: center;
+  margin: 10px 0 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+div.post-page div.content p {
+  line-height: 1.5rem;
+}
+
+div.edit-row {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.post-page a.edit-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a svg {
+  height: 20px;
+}
